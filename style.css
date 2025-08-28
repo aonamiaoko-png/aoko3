@@ -1,333 +1,333 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Noto+Sans+JP:wght@400;700&display=swap');
 
-/*全体設定 */
-体 {
-    font-family: 'Noto Sans JP'、'游ゴシック'、'游ゴシック'、游ゴシック、サンセリフ;
-    マージン: 0;
-    パディング: 0;
-    背景色: #000;
-    色: #f0f0f0;
-    行の高さ: 1.7;
-    背景画像: 放射状グラデーション(円、#222 1px、透明 1px);
-    背景サイズ: 20px 20px;
+/* 全体設定 */
+body {
+    font-family: 'Noto Sans JP', '游ゴシック', 'Yu Gothic', YuGothic, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #f0f0f0;
+    line-height: 1.7;
+    background-image: radial-gradient(circle, #222 1px, transparent 1px);
+    background-size: 20px 20px;
 }
 
-/* ---ヘッダー --- */
-ヘッダー {
-    背景: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Gemini_Generated_Image_samv9jsamv9jsamv.jpg');
-    背景サイズ: カバー;
-    背景の位置: 中央;
-    パディング: 150px 20px 100px;
-    テキスト配置: 中央;
-    位置: 相対的;
-    ボックスシャドウ: インセット 0 -20px 20px rgba(0, 0, 0, 0.8);
-    アニメーション: fadeIn 2s ease-in-out;
+/* --- ヘッダー --- */
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Gemini_Generated_Image_samv9jsamv9jsamv.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 20px 100px;
+    text-align: center;
+    position: relative;
+    box-shadow: inset 0 -20px 20px rgba(0, 0, 0, 0.8);
+    animation: fadeIn 2s ease-in-out;
 }
 
-ヘッダーh1、
-ヘッダー p {
-    位置: 相対的;
-    zインデックス: 2;
-    テキストシャドウ: 2px 2px 8px rgba(0, 0, 0, 0.9);
-    フォントファミリー: 'Oswald'、サンセリフ;
+header h1,
+header p {
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    font-family: 'Oswald', sans-serif;
 }
 
-ヘッダー h1 {
-    フォントサイズ: 5em;
-    マージン: 0;
-    文字間隔: 5px;
-    色: #ff3333;
+header h1 {
+    font-size: 5em;
+    margin: 0;
+    letter-spacing: 5px;
+    color: #ff3333;
 }
 
-ヘッダー p {
-    フォントサイズ: 1.6em;
-    上マージン: 20px;
-    フォントの太さ: 500;
+header p {
+    font-size: 1.6em;
+    margin-top: 20px;
+    font-weight: 500;
 }
 
 /* --- ナビゲーション --- */
-ナビ{
-    背景色: #111;
-    テキスト配置: 中央;
-    パディング: 15px 0;
-    位置: 固定;
-    上: 0;
-    zインデックス: 1000;
-    ボックスの影: 0 2px 5px rgba(0, 0, 0, 0.5);
+nav {
+    background-color: #111;
+    text-align: center;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-ナビゲーション ul {
-    リストスタイル: なし;
-    パディング: 0;
-    マージン: 0;
-    ディスプレイ: フレックス;
-    コンテンツの中央揃え: 中央;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
-ナビ li {
-    マージン: 0 25px;
-    位置: 相対的;
+nav li {
+    margin: 0 25px;
+    position: relative;
 }
 
-ナビ a {
-    色: #e0e0e0;
-    テキスト装飾: なし;
-    フォントの太さ: 700;
-    フォントサイズ: 1.1em;
-    パディング: 10px 20px;
-    遷移: カラー 0.3 秒、変換 0.3 秒;
-    文字間隔: 1px;
-    テキスト変換: 大文字;
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    transition: color 0.3s, transform 0.3s;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
-ナビゲーション a::after {
-    コンテンツ： '';
-    位置: 絶対;
-    下: -5px;
-    左：50％
-    変換: translateX(-50%);
-    幅: 0;
-    高さ: 3px;
-    背景: #ff3333;
-    トランジション: 幅 0.3 秒のイーズアウト;
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: #ff3333;
+    transition: width 0.3s ease-out;
 }
 
-ナビゲーション a:hover {
-    色: #ff3333;
+nav a:hover {
+    color: #ff3333;
 }
 
-ナビゲーション a:hover::after {
-    幅: 100%;
+nav a:hover::after {
+    width: 100%;
 }
 
 /* --- コンテナとセクション --- */
-。容器 {
-    幅: 90%;
-    最大幅: 1200px;
-    マージン: 40px 自動;
-    パディング: 30px;
-    背景: #181818;
-    ボックスの影: 0 5px 25px rgba(0, 0, 0, 0.7);
-    境界線の半径: 5px;
-    境界線: 1px 実線 #333;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #181818;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    border: 1px solid #333;
 }
 
-。セクション {
-    下部マージン: 60px;
-    パディング下部: 20px;
-    border-bottom: 1px 破線 #444;
+.section {
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #444;
 }
 
-.section:最後の型 {
-    下部境界線: なし;
+.section:last-of-type {
+    border-bottom: none;
 }
 
-.セクション h2 {
-    テキスト配置: 中央;
-    色: #ff3333;
-    フォントサイズ: 3em;
-    下部マージン: 30px;
-    位置: 相対的;
-    表示: インラインブロック;
-    パディング下部: 10px;
-    文字間隔: 2px;
-    フォントの太さ: 700;
-    テキスト変換: 大文字;
-    フォントファミリー: 'Oswald'、サンセリフ;
+.section h2 {
+    text-align: center;
+    color: #ff3333;
+    font-size: 3em;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
 }
 
 .section h2::after {
-    コンテンツ： '';
-    位置: 絶対;
-    左：50％
-    下部: 0;
-    変換: translateX(-50%);
-    幅: 100%;
-    高さ: 3px;
-    背景: linear-gradient(右向き、透明、#ff3333、透明);
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #ff3333, transparent);
 }
 
 /* --- アーティストカード --- */
-.アーティストカード{
-    ディスプレイ: フレックス;
-    flex-direction: 列;
-    アイテムの位置を中央揃えにします。
-    背景色: #202020;
-    境界線: 1px 実線 #333;
-    境界線の半径: 8px;
-    パディング: 30px;
-    下部マージン: 40px;
-    ボックスの影: 0 4px 15px rgba(0, 0, 0, 0.3);
-    遷移: transform 0.3s ease-in-out、box-shadow 0.3s ease-in-out;
+.artist-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #202020;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.アーティストカード:hover {
-    変換: translateY(-8px) スケール(1.02);
-    ボックスの影: 0 10px 30px rgba(0, 0, 0, 0.7);
+.artist-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
 }
 
-.アーティスト画像 {
-    幅: 100%;
-    下部マージン: 25px;
-    テキスト配置: 中央;
+.artist-image {
+    width: 100%;
+    margin-bottom: 25px;
+    text-align: center;
 }
 
-.アーティスト画像img {
-    最大幅: 100%;
-    高さ: 自動;
-    境界線の半径: 5px;
-    境界線: 3px 実線 #ff3333;
-    ボックスの影: 0 2px 10px rgba(0, 0, 0, 0.5);
+.artist-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 3px solid #ff3333;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease;
 }
 
-.アーティスト画像img:hover {
-    変換: スケール(1.05);
+.artist-image img:hover {
+    transform: scale(1.05);
 }
 
-.アーティスト情報{
-    幅: 100%;
-    パディング: 0 10px;
-    ボックスのサイズ: 境界線ボックス;
+.artist-info {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
-.アーティスト情報 h3 {
-    フォントサイズ: 2.2em;
-    色: #ff3333;
-    上マージン: 0;
-    下部マージン: 15px;
-    下部ボーダー: 2px 実線 #555;
-    パディング下部: 10px;
-    テキスト変換: 大文字;
-    フォントファミリー: 'Oswald'、サンセリフ;
+.artist-info h3 {
+    font-size: 2.2em;
+    color: #ff3333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
 }
 
-.アーティスト情報 ul {
-    リストスタイル: なし;
-    パディング: 0;
-    上マージン: 20px;
+.artist-info ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
 }
 
-.アーティスト情報 li {
-    下部マージン: 15px;
-    色: #d0d0d0;
+.artist-info li {
+    margin-bottom: 15px;
+    color: #d0d0d0;
 }
 
-.アーティスト情報 li strong {
-    色: #fff;
-    テキストシャドウ: 1px 1px 2px #000;
+.artist-info li strong {
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
 }
 
-.アーティスト情報 li:nth-child(3),
-.アーティスト情報 li:nth-child(4) {
-    フォントサイズ: 1.1em;
-    色: #ffcc99;
-    フォントの太さ: 700;
-    フォントスタイル: 斜体;
-    テキストシャドウ: 1px 1px 3px rgba(255, 165, 0, 0.5);
+.artist-info li:nth-child(3),
+.artist-info li:nth-child(4) {
+    font-size: 1.1em;
+    color: #ffcc99;
+    font-weight: 700;
+    font-style: italic;
+    text-shadow: 1px 1px 3px rgba(255, 165, 0, 0.5);
 }
 
 /* --- イベント情報とチケットボタン --- */
-.イベント情報{
-    テキスト配置: 中央;
-    背景色: #111;
-    パディング: 40px;
-    境界線の半径: 8px;
-    境界線: 1px 実線 #444;
-    ボックスの影: 0 4px 10px rgba(0, 0, 0, 0.2);
+.event-info {
+    text-align: center;
+    background-color: #111;
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.イベント情報 p {
-    フォントサイズ: 1.1em;
-    下部マージン: 15px;
+.event-info p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
 }
 
-.イベント情報強力{
-    色: #fff;
+.event-info strong {
+    color: #fff;
 }
 
-.イベント情報 a {
-    表示: インラインブロック;
-    背景: 線形グラデーション(45度, #ff3333, #e62e2e);
-    色: #fff;
-    パディング: 18px 35px;
-    テキスト装飾: なし;
-    境界線の半径: 50px;
-    フォントサイズ: 1.3em;
-    上マージン: 30px;
-    transition: transform 0.3s ease、box-shadow 0.3s ease;
-    境界線: 2px 実線 #ff3333;
-    ボックスの影: 0 4px 15px rgba(0, 0, 0, 0.5);
-    フォントの太さ: 太字;
-    文字間隔: 1px;
+.event-info a {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff3333, #e62e2e);
+    color: #fff;
+    padding: 18px 35px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.3em;
+    margin-top: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #ff3333;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .event-info a:hover {
-    変換: translateY(-5px) スケール(1.05);
-    ボックスの影: 0 8px 20px rgba(0, 0, 0, 0.7);
-    背景: 線形グラデーション(45度, #e62e2e, #ff3333);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+    background: linear-gradient(45deg, #e62e2e, #ff3333);
 }
 
 /* --- フッター --- */
-フッター {
-    テキスト配置: 中央;
-    パディング: 30px;
-    背景色: #0d0d0d;
-    色: #555;
-    フォントサイズ: 0.9em;
-    上マージン: 50px;
-    上ボーダー: 1px 実線 #333;
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #0d0d0d;
+    color: #555;
+    font-size: 0.9em;
+    margin-top: 50px;
+    border-top: 1px solid #333;
 }
 
 /* --- キーフレームアニメーション --- */
-@keyframes フェードイン {
-    から {
-        不透明度: 0;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
 
-    に {
-        不透明度: 1;
+    to {
+        opacity: 1;
     }
 }
 
 
-/* --- PC 向けレイアウト --- */
-@media (最小幅: 768px) {
-    .アーティストカード{
-        flex-direction: 行;
-        コンテンツの配置: スペースの間;
+/* --- PC向けレイアウト --- */
+@media (min-width: 768px) {
+    .artist-card {
+        flex-direction: row;
+        justify-content: space-between;
         align-items: flex-start;
     }
 
-    .アーティスト画像 {
-        幅: 30%;
-        右マージン: 30px;
-        下マージン: 0;
+    .artist-image {
+        width: 30%;
+        margin-right: 30px;
+        margin-bottom: 0;
     }
 
-    .アーティスト画像img {
-        高さ: 自動;
+    .artist-image img {
+        height: auto;
     }
 
-    .アーティスト情報{
-        幅: 45%;
-        パディング: 0;
+    .artist-info {
+        width: 45%;
+        padding: 0;
     }
 
-    .youtube-コンテナ{
-        幅: 25%;
-        上マージン: 0;
+    .youtube-container {
+        width: 25%;
+        margin-top: 0;
     }
 
-    .youtube-ビデオ{
-        高さ: 200px;
+    .youtube-video {
+        height: 200px;
     }
 
-    ヘッダー h1 {
-        フォントサイズ: 5.5em;
+    header h1 {
+        font-size: 5.5em;
     }
 
-    ヘッダー p {
-        フォントサイズ: 1.8em;
+    header p {
+        font-size: 1.8em;
     }
 }
